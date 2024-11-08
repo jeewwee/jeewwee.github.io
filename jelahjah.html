@@ -1,0 +1,2953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEALTH GO - Jelahjah</title>
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/odometer.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="jelahjah-main">
+      <div
+        class="header d-flex justify-content-center align-items-center w-100"
+      >
+        <div
+          class="header-wrap d-flex justify-content-between align-items-center flex-row"
+        >
+          <div class="logo">
+            <img src="./assets/img/header-logo.png" alt="" />
+          </div>
+          <div class="links d-flex justify-content-between align-items-center">
+            <a class="font-primary fs-xsm" href="./home.html">Home</a>
+            <a class="font-primary fs-xsm" href="./menu.html">Menu</a>
+            <a class="font-primary fs-xsm" href="./program.html">Program</a>
+            <a class="font-primary fs-xsm" href="./jelahjah.html">Jelajah</a>
+            <a href="./profile.html">
+            <div
+              class="user-profile d-flex justify-content-center align-items-center flex-row"
+            >
+              <div class="profile">
+                <img src="./assets/img/ava.png" alt="" />
+              </div>
+              <h1 class="font-primary fs-xsm">Damian Lin</h1>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="jelahjah-container d-flex justify-content-between align-items-center flex-column w-100"
+      >
+        <div
+          class="jelahjah-main-heading d-flex justify-content-between align-items-center flex-column"
+        >
+          <h1 class="">Jelajah</h1>
+          <p class="">Artikel yang mungkin kamu belum tahu</p>
+        </div>
+        <div
+          class="filter-container d-flex justify-content-between align-items-center flex-row"
+        >
+          <div
+            class="input-container d-flex justify-content-center align-items-start flex-column"
+          >
+            <input
+              type="text"
+              id="domisili"
+              pattern="[A-Za-z]+"
+              placeholder="Cari article..."
+              required
+            />
+          </div>
+          <div
+            class="filter-wrap d-flex justify-content-between align-items-center flex-row"
+          >
+            <button class="tab-button active" onclick="openTab('tab1', event)">
+              <div
+                class="filter d-flex justify-content-between align-items-center flex-row"
+              >
+                <h1 class="">🌍</h1>
+                <p class="">Semua</p>
+              </div>
+            </button>
+            <button class="tab-button" onclick="openTab('tab2', event)">
+              <div
+                class="filter d-flex justify-content-between align-items-center flex-row"
+              >
+                <h1 class="">🧠</h1>
+                <p class="">Life Hacks</p>
+              </div>
+            </button>
+            <button class="tab-button" onclick="openTab('tab3', event)">
+              <div
+                class="filter d-flex justify-content-between align-items-center flex-row"
+              >
+                <h1 class="">⛳️</h1>
+                <p class="">Sport</p>
+              </div>
+            </button>
+            <button class="tab-button" onclick="openTab('tab4', event)">
+              <div
+                class="filter d-flex justify-content-between align-items-center flex-row"
+              >
+                <h1 class="">🍳</h1>
+                <p class="">Recipe</p>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          id="tab1"
+          class="justify-content-between align-items-start flex-column w-100 tab-content"
+        >
+          <div
+            class="popular-article-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <h1 class="">5 Most Popular Article</h1>
+
+            <div
+              class="popular-article-wrap d-flex justify-content-between align-items-start flex-row"
+            >
+              <a href="#">
+                <div
+                  class="popular-article-1 d-flex justify-content-between align-items-center flex-column"
+                >
+                  <img src="./assets/img/image 62.png" alt="" />
+                  <div
+                    class="content d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <div
+                      class="side-pill d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <svg
+                        width="78"
+                        height="56"
+                        viewBox="0 0 78 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask id="path-1-inside-1_3653_84497" fill="white">
+                          <path d="M0 0H78V56H0V0Z" />
+                        </mask>
+                        <path d="M0 0H78V56H0V0Z" fill="#1F4836" />
+                        <path
+                          d="M9.75 56V0H-9.75V56H9.75Z"
+                          fill="#F05947"
+                          mask="url(#path-1-inside-1_3653_84497)"
+                        />
+                        <path
+                          d="M36.6888 19.3412H33.8926L33.5604 21.2792H36.3843L35.8582 24.6014H33.0067L32.3422 28.6157H28.7985L29.463 24.6014H27.1928L26.5283 28.6157H22.9846L23.6491 24.6014H20.8529L21.3789 21.2792H24.2028L24.535 19.3412H21.7111L22.2371 16.019H25.0887L25.7531 12.0046H29.2968L28.6324 16.019H30.9026L31.567 12.0046H35.1107L34.4463 16.019H37.2148L36.6888 19.3412ZM30.0167 21.2792L30.3489 19.3412H28.0787L27.7465 21.2792H30.0167ZM47.5929 12.7006H54.6987V45H46.4393V21.3753L40.81 22.8057L38.8259 15.8383L47.5929 12.7006Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="info d-flex justify-content-between align-items-start flex-column"
+                    >
+                      <h1 class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </h1>
+                      <p class="">14 November 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div
+                class="artical-card-container d-flex justify-content-between align-items-center flex-column"
+              >
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 59.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65760" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65760)"
+                            />
+                            <path
+                              d="M19.0727 9.994H17.4971L17.3099 11.086H18.9011L18.6047 12.958H16.9979L16.6235 15.22H14.6267L15.0011 12.958H13.7219L13.3475 15.22H11.3507L11.7251 12.958H10.1495L10.4459 11.086H12.0371L12.2243 9.994H10.6331L10.9295 8.122H12.5363L12.9107 5.86H14.9075L14.5331 8.122H15.8123L16.1867 5.86H18.1835L17.8091 8.122H19.3691L19.0727 9.994ZM15.3131 11.086L15.5003 9.994H14.2211L14.0339 11.086H15.3131ZM20.6929 25V21.62L26.7249 15.25C27.3316 14.5913 27.7736 14.0627 28.0509 13.664C28.3282 13.248 28.4669 12.8407 28.4669 12.442C28.4669 11.9913 28.3196 11.6273 28.0249 11.35C27.7476 11.0727 27.3576 10.934 26.8549 10.934C25.7802 10.934 24.9656 11.5667 24.4109 12.832L20.4069 10.596C20.9962 9.22667 21.8629 8.18667 23.0069 7.476C24.1509 6.76533 25.4162 6.41 26.8029 6.41C28.5362 6.41 30.0182 6.93 31.2489 7.97C32.4969 8.99267 33.1209 10.3967 33.1209 12.182C33.1209 13.2393 32.8696 14.2187 32.3669 15.12C31.8816 16.004 31.1622 16.94 30.2089 17.928L27.7389 20.502H33.4329V25H20.6929Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 57.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65764" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65764)"
+                            />
+                            <path
+                              d="M18.9584 9.994H17.3828L17.1956 11.086H18.7868L18.4904 12.958H16.8836L16.5092 15.22H14.5124L14.8868 12.958H13.6076L13.2332 15.22H11.2364L11.6108 12.958H10.0352L10.3316 11.086H11.9228L12.11 9.994H10.5188L10.8152 8.122H12.422L12.7964 5.86H14.7932L14.4188 8.122H15.698L16.0724 5.86H18.0692L17.6948 8.122H19.2548L18.9584 9.994ZM15.1988 11.086L15.386 9.994H14.1068L13.9196 11.086H15.1988ZM29.7306 14.21C30.892 14.574 31.828 15.198 32.5386 16.082C33.2493 16.966 33.6046 18.032 33.6046 19.28C33.6046 21.2387 32.9633 22.7467 31.6806 23.804C30.398 24.8613 28.812 25.39 26.9226 25.39C25.4146 25.39 24.0713 25.0433 22.8926 24.35C21.7313 23.6567 20.8906 22.634 20.3706 21.282L24.4266 18.968C24.808 20.2333 25.64 20.866 26.9226 20.866C27.5813 20.866 28.084 20.71 28.4306 20.398C28.7946 20.086 28.9766 19.67 28.9766 19.15C28.9766 18.63 28.7946 18.2227 28.4306 17.928C28.084 17.616 27.5813 17.46 26.9226 17.46H25.9346L24.1406 14.808L27.0526 11.246H20.9426V6.8H32.7726V10.466L29.7306 14.21Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 56.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65766" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65766)"
+                            />
+                            <path
+                              d="M18.5649 9.994H16.9893L16.8021 11.086H18.3933L18.0969 12.958H16.4901L16.1157 15.22H14.1189L14.4933 12.958H13.2141L12.8397 15.22H10.8429L11.2173 12.958H9.64167L9.93807 11.086H11.5293L11.7165 9.994H10.1253L10.4217 8.122H12.0285L12.4029 5.86H14.3997L14.0253 8.122H15.3045L15.6789 5.86H17.6757L17.3013 8.122H18.8613L18.5649 9.994ZM14.8053 11.086L14.9925 9.994H13.7133L13.5261 11.086H14.8053ZM34.4591 17.98V22.218H32.6391V25H28.0111V22.218H20.0291V17.98L25.4631 6.8H30.6111L25.1251 17.98H28.0111V14.704H32.6391V17.98H34.4591Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 58.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65768" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65768)"
+                            />
+                            <path
+                              d="M18.933 9.994H17.3574L17.1702 11.086H18.7614L18.465 12.958H16.8582L16.4838 15.22H14.487L14.8614 12.958H13.5822L13.2078 15.22H11.211L11.5854 12.958H10.0098L10.3062 11.086H11.8974L12.0846 9.994H10.4934L10.7898 8.122H12.3966L12.771 5.86H14.7678L14.3934 8.122H15.6726L16.047 5.86H18.0438L17.6694 8.122H19.2294L18.933 9.994ZM15.1734 11.086L15.3606 9.994H14.0814L13.8942 11.086H15.1734ZM27.5472 13.196C29.3326 13.196 30.8146 13.716 31.9932 14.756C33.1892 15.796 33.7872 17.2693 33.7872 19.176C33.7872 21.152 33.1459 22.686 31.8632 23.778C30.5806 24.8527 28.9859 25.39 27.0792 25.39C25.4846 25.39 24.0979 25.052 22.9192 24.376C21.7406 23.6827 20.8826 22.6513 20.3452 21.282L24.4012 18.968C24.7826 20.2333 25.6752 20.866 27.0792 20.866C27.7379 20.866 28.2406 20.7187 28.5872 20.424C28.9512 20.112 29.1332 19.696 29.1332 19.176C29.1332 18.6387 28.9512 18.2227 28.5872 17.928C28.2406 17.6333 27.7639 17.486 27.1572 17.486H21.3332L22.0872 6.8H32.7992V11.246H26.3772L26.2472 13.196H27.5472Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sunt in culpa qui officia deserunt mollit anim id
+                            est laborum
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sport-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Sports</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="sport-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  id="lastCard"
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="lifehack-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Life Hacks</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="life-prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="life-next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="lifehack-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  id="lastCard"
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="tab2"
+          class="justify-content-between align-items-start flex-column w-100 tab-content"
+        >
+          <div
+            class="popular-article-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <h1 class="">5 Most Popular Article</h1>
+
+            <div
+              class="popular-article-wrap d-flex justify-content-between align-items-start flex-row"
+            >
+              <a href="#">
+                <div
+                  class="popular-article-1 d-flex justify-content-between align-items-center flex-column"
+                >
+                  <img src="./assets/img/image 62.png" alt="" />
+                  <div
+                    class="content d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <div
+                      class="side-pill d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <svg
+                        width="78"
+                        height="56"
+                        viewBox="0 0 78 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask id="path-1-inside-1_3653_84497" fill="white">
+                          <path d="M0 0H78V56H0V0Z" />
+                        </mask>
+                        <path d="M0 0H78V56H0V0Z" fill="#1F4836" />
+                        <path
+                          d="M9.75 56V0H-9.75V56H9.75Z"
+                          fill="#F05947"
+                          mask="url(#path-1-inside-1_3653_84497)"
+                        />
+                        <path
+                          d="M36.6888 19.3412H33.8926L33.5604 21.2792H36.3843L35.8582 24.6014H33.0067L32.3422 28.6157H28.7985L29.463 24.6014H27.1928L26.5283 28.6157H22.9846L23.6491 24.6014H20.8529L21.3789 21.2792H24.2028L24.535 19.3412H21.7111L22.2371 16.019H25.0887L25.7531 12.0046H29.2968L28.6324 16.019H30.9026L31.567 12.0046H35.1107L34.4463 16.019H37.2148L36.6888 19.3412ZM30.0167 21.2792L30.3489 19.3412H28.0787L27.7465 21.2792H30.0167ZM47.5929 12.7006H54.6987V45H46.4393V21.3753L40.81 22.8057L38.8259 15.8383L47.5929 12.7006Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="info d-flex justify-content-between align-items-start flex-column"
+                    >
+                      <h1 class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </h1>
+                      <p class="">14 November 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div
+                class="artical-card-container d-flex justify-content-between align-items-center flex-column"
+              >
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 57.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65760" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65760)"
+                            />
+                            <path
+                              d="M19.0727 9.994H17.4971L17.3099 11.086H18.9011L18.6047 12.958H16.9979L16.6235 15.22H14.6267L15.0011 12.958H13.7219L13.3475 15.22H11.3507L11.7251 12.958H10.1495L10.4459 11.086H12.0371L12.2243 9.994H10.6331L10.9295 8.122H12.5363L12.9107 5.86H14.9075L14.5331 8.122H15.8123L16.1867 5.86H18.1835L17.8091 8.122H19.3691L19.0727 9.994ZM15.3131 11.086L15.5003 9.994H14.2211L14.0339 11.086H15.3131ZM20.6929 25V21.62L26.7249 15.25C27.3316 14.5913 27.7736 14.0627 28.0509 13.664C28.3282 13.248 28.4669 12.8407 28.4669 12.442C28.4669 11.9913 28.3196 11.6273 28.0249 11.35C27.7476 11.0727 27.3576 10.934 26.8549 10.934C25.7802 10.934 24.9656 11.5667 24.4109 12.832L20.4069 10.596C20.9962 9.22667 21.8629 8.18667 23.0069 7.476C24.1509 6.76533 25.4162 6.41 26.8029 6.41C28.5362 6.41 30.0182 6.93 31.2489 7.97C32.4969 8.99267 33.1209 10.3967 33.1209 12.182C33.1209 13.2393 32.8696 14.2187 32.3669 15.12C31.8816 16.004 31.1622 16.94 30.2089 17.928L27.7389 20.502H33.4329V25H20.6929Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 59.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65764" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65764)"
+                            />
+                            <path
+                              d="M18.9584 9.994H17.3828L17.1956 11.086H18.7868L18.4904 12.958H16.8836L16.5092 15.22H14.5124L14.8868 12.958H13.6076L13.2332 15.22H11.2364L11.6108 12.958H10.0352L10.3316 11.086H11.9228L12.11 9.994H10.5188L10.8152 8.122H12.422L12.7964 5.86H14.7932L14.4188 8.122H15.698L16.0724 5.86H18.0692L17.6948 8.122H19.2548L18.9584 9.994ZM15.1988 11.086L15.386 9.994H14.1068L13.9196 11.086H15.1988ZM29.7306 14.21C30.892 14.574 31.828 15.198 32.5386 16.082C33.2493 16.966 33.6046 18.032 33.6046 19.28C33.6046 21.2387 32.9633 22.7467 31.6806 23.804C30.398 24.8613 28.812 25.39 26.9226 25.39C25.4146 25.39 24.0713 25.0433 22.8926 24.35C21.7313 23.6567 20.8906 22.634 20.3706 21.282L24.4266 18.968C24.808 20.2333 25.64 20.866 26.9226 20.866C27.5813 20.866 28.084 20.71 28.4306 20.398C28.7946 20.086 28.9766 19.67 28.9766 19.15C28.9766 18.63 28.7946 18.2227 28.4306 17.928C28.084 17.616 27.5813 17.46 26.9226 17.46H25.9346L24.1406 14.808L27.0526 11.246H20.9426V6.8H32.7726V10.466L29.7306 14.21Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 56.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65766" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65766)"
+                            />
+                            <path
+                              d="M18.5649 9.994H16.9893L16.8021 11.086H18.3933L18.0969 12.958H16.4901L16.1157 15.22H14.1189L14.4933 12.958H13.2141L12.8397 15.22H10.8429L11.2173 12.958H9.64167L9.93807 11.086H11.5293L11.7165 9.994H10.1253L10.4217 8.122H12.0285L12.4029 5.86H14.3997L14.0253 8.122H15.3045L15.6789 5.86H17.6757L17.3013 8.122H18.8613L18.5649 9.994ZM14.8053 11.086L14.9925 9.994H13.7133L13.5261 11.086H14.8053ZM34.4591 17.98V22.218H32.6391V25H28.0111V22.218H20.0291V17.98L25.4631 6.8H30.6111L25.1251 17.98H28.0111V14.704H32.6391V17.98H34.4591Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 58.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65768" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65768)"
+                            />
+                            <path
+                              d="M18.933 9.994H17.3574L17.1702 11.086H18.7614L18.465 12.958H16.8582L16.4838 15.22H14.487L14.8614 12.958H13.5822L13.2078 15.22H11.211L11.5854 12.958H10.0098L10.3062 11.086H11.8974L12.0846 9.994H10.4934L10.7898 8.122H12.3966L12.771 5.86H14.7678L14.3934 8.122H15.6726L16.047 5.86H18.0438L17.6694 8.122H19.2294L18.933 9.994ZM15.1734 11.086L15.3606 9.994H14.0814L13.8942 11.086H15.1734ZM27.5472 13.196C29.3326 13.196 30.8146 13.716 31.9932 14.756C33.1892 15.796 33.7872 17.2693 33.7872 19.176C33.7872 21.152 33.1459 22.686 31.8632 23.778C30.5806 24.8527 28.9859 25.39 27.0792 25.39C25.4846 25.39 24.0979 25.052 22.9192 24.376C21.7406 23.6827 20.8826 22.6513 20.3452 21.282L24.4012 18.968C24.7826 20.2333 25.6752 20.866 27.0792 20.866C27.7379 20.866 28.2406 20.7187 28.5872 20.424C28.9512 20.112 29.1332 19.696 29.1332 19.176C29.1332 18.6387 28.9512 18.2227 28.5872 17.928C28.2406 17.6333 27.7639 17.486 27.1572 17.486H21.3332L22.0872 6.8H32.7992V11.246H26.3772L26.2472 13.196H27.5472Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sunt in culpa qui officia deserunt mollit anim id
+                            est laborum
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sport-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Sports</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="sport-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="sport-card-main">
+                <div
+                  id="lastCard"
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="lifehack-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Life Hacks</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="life-prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="life-next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="lifehack-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  id="lastCard"
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="tab3"
+          class="justify-content-between align-items-start flex-column w-100 tab-content"
+        >
+          <div
+            class="popular-article-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <h1 class="">5 Most Popular Article</h1>
+
+            <div
+              class="popular-article-wrap d-flex justify-content-between align-items-start flex-row"
+            >
+              <a href="#">
+                <div
+                  class="popular-article-1 d-flex justify-content-between align-items-center flex-column"
+                >
+                  <img src="./assets/img/news.png" alt="" />
+                  <div
+                    class="content d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <div
+                      class="side-pill d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <svg
+                        width="78"
+                        height="56"
+                        viewBox="0 0 78 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask id="path-1-inside-1_3653_84497" fill="white">
+                          <path d="M0 0H78V56H0V0Z" />
+                        </mask>
+                        <path d="M0 0H78V56H0V0Z" fill="#1F4836" />
+                        <path
+                          d="M9.75 56V0H-9.75V56H9.75Z"
+                          fill="#F05947"
+                          mask="url(#path-1-inside-1_3653_84497)"
+                        />
+                        <path
+                          d="M36.6888 19.3412H33.8926L33.5604 21.2792H36.3843L35.8582 24.6014H33.0067L32.3422 28.6157H28.7985L29.463 24.6014H27.1928L26.5283 28.6157H22.9846L23.6491 24.6014H20.8529L21.3789 21.2792H24.2028L24.535 19.3412H21.7111L22.2371 16.019H25.0887L25.7531 12.0046H29.2968L28.6324 16.019H30.9026L31.567 12.0046H35.1107L34.4463 16.019H37.2148L36.6888 19.3412ZM30.0167 21.2792L30.3489 19.3412H28.0787L27.7465 21.2792H30.0167ZM47.5929 12.7006H54.6987V45H46.4393V21.3753L40.81 22.8057L38.8259 15.8383L47.5929 12.7006Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="info d-flex justify-content-between align-items-start flex-column"
+                    >
+                      <h1 class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </h1>
+                      <p class="">14 November 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div
+                class="artical-card-container d-flex justify-content-between align-items-center flex-column"
+              >
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 57.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65760" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65760)"
+                            />
+                            <path
+                              d="M19.0727 9.994H17.4971L17.3099 11.086H18.9011L18.6047 12.958H16.9979L16.6235 15.22H14.6267L15.0011 12.958H13.7219L13.3475 15.22H11.3507L11.7251 12.958H10.1495L10.4459 11.086H12.0371L12.2243 9.994H10.6331L10.9295 8.122H12.5363L12.9107 5.86H14.9075L14.5331 8.122H15.8123L16.1867 5.86H18.1835L17.8091 8.122H19.3691L19.0727 9.994ZM15.3131 11.086L15.5003 9.994H14.2211L14.0339 11.086H15.3131ZM20.6929 25V21.62L26.7249 15.25C27.3316 14.5913 27.7736 14.0627 28.0509 13.664C28.3282 13.248 28.4669 12.8407 28.4669 12.442C28.4669 11.9913 28.3196 11.6273 28.0249 11.35C27.7476 11.0727 27.3576 10.934 26.8549 10.934C25.7802 10.934 24.9656 11.5667 24.4109 12.832L20.4069 10.596C20.9962 9.22667 21.8629 8.18667 23.0069 7.476C24.1509 6.76533 25.4162 6.41 26.8029 6.41C28.5362 6.41 30.0182 6.93 31.2489 7.97C32.4969 8.99267 33.1209 10.3967 33.1209 12.182C33.1209 13.2393 32.8696 14.2187 32.3669 15.12C31.8816 16.004 31.1622 16.94 30.2089 17.928L27.7389 20.502H33.4329V25H20.6929Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 59.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65764" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65764)"
+                            />
+                            <path
+                              d="M18.9584 9.994H17.3828L17.1956 11.086H18.7868L18.4904 12.958H16.8836L16.5092 15.22H14.5124L14.8868 12.958H13.6076L13.2332 15.22H11.2364L11.6108 12.958H10.0352L10.3316 11.086H11.9228L12.11 9.994H10.5188L10.8152 8.122H12.422L12.7964 5.86H14.7932L14.4188 8.122H15.698L16.0724 5.86H18.0692L17.6948 8.122H19.2548L18.9584 9.994ZM15.1988 11.086L15.386 9.994H14.1068L13.9196 11.086H15.1988ZM29.7306 14.21C30.892 14.574 31.828 15.198 32.5386 16.082C33.2493 16.966 33.6046 18.032 33.6046 19.28C33.6046 21.2387 32.9633 22.7467 31.6806 23.804C30.398 24.8613 28.812 25.39 26.9226 25.39C25.4146 25.39 24.0713 25.0433 22.8926 24.35C21.7313 23.6567 20.8906 22.634 20.3706 21.282L24.4266 18.968C24.808 20.2333 25.64 20.866 26.9226 20.866C27.5813 20.866 28.084 20.71 28.4306 20.398C28.7946 20.086 28.9766 19.67 28.9766 19.15C28.9766 18.63 28.7946 18.2227 28.4306 17.928C28.084 17.616 27.5813 17.46 26.9226 17.46H25.9346L24.1406 14.808L27.0526 11.246H20.9426V6.8H32.7726V10.466L29.7306 14.21Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 56.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65766" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65766)"
+                            />
+                            <path
+                              d="M18.5649 9.994H16.9893L16.8021 11.086H18.3933L18.0969 12.958H16.4901L16.1157 15.22H14.1189L14.4933 12.958H13.2141L12.8397 15.22H10.8429L11.2173 12.958H9.64167L9.93807 11.086H11.5293L11.7165 9.994H10.1253L10.4217 8.122H12.0285L12.4029 5.86H14.3997L14.0253 8.122H15.3045L15.6789 5.86H17.6757L17.3013 8.122H18.8613L18.5649 9.994ZM14.8053 11.086L14.9925 9.994H13.7133L13.5261 11.086H14.8053ZM34.4591 17.98V22.218H32.6391V25H28.0111V22.218H20.0291V17.98L25.4631 6.8H30.6111L25.1251 17.98H28.0111V14.704H32.6391V17.98H34.4591Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 58.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65768" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65768)"
+                            />
+                            <path
+                              d="M18.933 9.994H17.3574L17.1702 11.086H18.7614L18.465 12.958H16.8582L16.4838 15.22H14.487L14.8614 12.958H13.5822L13.2078 15.22H11.211L11.5854 12.958H10.0098L10.3062 11.086H11.8974L12.0846 9.994H10.4934L10.7898 8.122H12.3966L12.771 5.86H14.7678L14.3934 8.122H15.6726L16.047 5.86H18.0438L17.6694 8.122H19.2294L18.933 9.994ZM15.1734 11.086L15.3606 9.994H14.0814L13.8942 11.086H15.1734ZM27.5472 13.196C29.3326 13.196 30.8146 13.716 31.9932 14.756C33.1892 15.796 33.7872 17.2693 33.7872 19.176C33.7872 21.152 33.1459 22.686 31.8632 23.778C30.5806 24.8527 28.9859 25.39 27.0792 25.39C25.4846 25.39 24.0979 25.052 22.9192 24.376C21.7406 23.6827 20.8826 22.6513 20.3452 21.282L24.4012 18.968C24.7826 20.2333 25.6752 20.866 27.0792 20.866C27.7379 20.866 28.2406 20.7187 28.5872 20.424C28.9512 20.112 29.1332 19.696 29.1332 19.176C29.1332 18.6387 28.9512 18.2227 28.5872 17.928C28.2406 17.6333 27.7639 17.486 27.1572 17.486H21.3332L22.0872 6.8H32.7992V11.246H26.3772L26.2472 13.196H27.5472Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sunt in culpa qui officia deserunt mollit anim id
+                            est laborum
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sport-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Sports</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="sport-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  id="lastCard"
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="lifehack-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Life Hacks</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="life-prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="life-next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="lifehack-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  id="lastCard"
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="tab4"
+          class="justify-content-between align-items-start flex-column w-100 tab-content"
+        >
+          <div
+            class="popular-article-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <h1 class="">5 Most Popular Article</h1>
+
+            <div
+              class="popular-article-wrap d-flex justify-content-between align-items-start flex-row"
+            >
+              <a href="">
+                <div
+                  class="popular-article-1 d-flex justify-content-between align-items-center flex-column"
+                >
+                  <img src="./assets/img/image 62.png" alt="" />
+                  <div
+                    class="content d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <div
+                      class="side-pill d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <svg
+                        width="78"
+                        height="56"
+                        viewBox="0 0 78 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask id="path-1-inside-1_3653_84497" fill="white">
+                          <path d="M0 0H78V56H0V0Z" />
+                        </mask>
+                        <path d="M0 0H78V56H0V0Z" fill="#1F4836" />
+                        <path
+                          d="M9.75 56V0H-9.75V56H9.75Z"
+                          fill="#F05947"
+                          mask="url(#path-1-inside-1_3653_84497)"
+                        />
+                        <path
+                          d="M36.6888 19.3412H33.8926L33.5604 21.2792H36.3843L35.8582 24.6014H33.0067L32.3422 28.6157H28.7985L29.463 24.6014H27.1928L26.5283 28.6157H22.9846L23.6491 24.6014H20.8529L21.3789 21.2792H24.2028L24.535 19.3412H21.7111L22.2371 16.019H25.0887L25.7531 12.0046H29.2968L28.6324 16.019H30.9026L31.567 12.0046H35.1107L34.4463 16.019H37.2148L36.6888 19.3412ZM30.0167 21.2792L30.3489 19.3412H28.0787L27.7465 21.2792H30.0167ZM47.5929 12.7006H54.6987V45H46.4393V21.3753L40.81 22.8057L38.8259 15.8383L47.5929 12.7006Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="info d-flex justify-content-between align-items-start flex-column"
+                    >
+                      <h1 class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </h1>
+                      <p class="">14 November 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div
+                class="artical-card-container d-flex justify-content-between align-items-center flex-column"
+              >
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 57.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65760" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65760)"
+                            />
+                            <path
+                              d="M19.0727 9.994H17.4971L17.3099 11.086H18.9011L18.6047 12.958H16.9979L16.6235 15.22H14.6267L15.0011 12.958H13.7219L13.3475 15.22H11.3507L11.7251 12.958H10.1495L10.4459 11.086H12.0371L12.2243 9.994H10.6331L10.9295 8.122H12.5363L12.9107 5.86H14.9075L14.5331 8.122H15.8123L16.1867 5.86H18.1835L17.8091 8.122H19.3691L19.0727 9.994ZM15.3131 11.086L15.5003 9.994H14.2211L14.0339 11.086H15.3131ZM20.6929 25V21.62L26.7249 15.25C27.3316 14.5913 27.7736 14.0627 28.0509 13.664C28.3282 13.248 28.4669 12.8407 28.4669 12.442C28.4669 11.9913 28.3196 11.6273 28.0249 11.35C27.7476 11.0727 27.3576 10.934 26.8549 10.934C25.7802 10.934 24.9656 11.5667 24.4109 12.832L20.4069 10.596C20.9962 9.22667 21.8629 8.18667 23.0069 7.476C24.1509 6.76533 25.4162 6.41 26.8029 6.41C28.5362 6.41 30.0182 6.93 31.2489 7.97C32.4969 8.99267 33.1209 10.3967 33.1209 12.182C33.1209 13.2393 32.8696 14.2187 32.3669 15.12C31.8816 16.004 31.1622 16.94 30.2089 17.928L27.7389 20.502H33.4329V25H20.6929Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 59.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65764" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65764)"
+                            />
+                            <path
+                              d="M18.9584 9.994H17.3828L17.1956 11.086H18.7868L18.4904 12.958H16.8836L16.5092 15.22H14.5124L14.8868 12.958H13.6076L13.2332 15.22H11.2364L11.6108 12.958H10.0352L10.3316 11.086H11.9228L12.11 9.994H10.5188L10.8152 8.122H12.422L12.7964 5.86H14.7932L14.4188 8.122H15.698L16.0724 5.86H18.0692L17.6948 8.122H19.2548L18.9584 9.994ZM15.1988 11.086L15.386 9.994H14.1068L13.9196 11.086H15.1988ZM29.7306 14.21C30.892 14.574 31.828 15.198 32.5386 16.082C33.2493 16.966 33.6046 18.032 33.6046 19.28C33.6046 21.2387 32.9633 22.7467 31.6806 23.804C30.398 24.8613 28.812 25.39 26.9226 25.39C25.4146 25.39 24.0713 25.0433 22.8926 24.35C21.7313 23.6567 20.8906 22.634 20.3706 21.282L24.4266 18.968C24.808 20.2333 25.64 20.866 26.9226 20.866C27.5813 20.866 28.084 20.71 28.4306 20.398C28.7946 20.086 28.9766 19.67 28.9766 19.15C28.9766 18.63 28.7946 18.2227 28.4306 17.928C28.084 17.616 27.5813 17.46 26.9226 17.46H25.9346L24.1406 14.808L27.0526 11.246H20.9426V6.8H32.7726V10.466L29.7306 14.21Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="artical-card-wrap d-flex justify-content-between align-items-center flex-row"
+                >
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 56.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65766" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65766)"
+                            />
+                            <path
+                              d="M18.5649 9.994H16.9893L16.8021 11.086H18.3933L18.0969 12.958H16.4901L16.1157 15.22H14.1189L14.4933 12.958H13.2141L12.8397 15.22H10.8429L11.2173 12.958H9.64167L9.93807 11.086H11.5293L11.7165 9.994H10.1253L10.4217 8.122H12.0285L12.4029 5.86H14.3997L14.0253 8.122H15.3045L15.6789 5.86H17.6757L17.3013 8.122H18.8613L18.5649 9.994ZM14.8053 11.086L14.9925 9.994H13.7133L13.5261 11.086H14.8053ZM34.4591 17.98V22.218H32.6391V25H28.0111V22.218H20.0291V17.98L25.4631 6.8H30.6111L25.1251 17.98H28.0111V14.704H32.6391V17.98H34.4591Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="popular-article d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <img src="./assets/img/image 58.png" alt="" />
+                      <div
+                        class="content d-flex justify-content-between align-items-start flex-column"
+                      >
+                        <div
+                          class="side-pill d-flex justify-content-between align-items-center flex-column"
+                        >
+                          <svg
+                            width="44"
+                            height="32"
+                            viewBox="0 0 44 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask id="path-1-inside-1_563_65768" fill="white">
+                              <path d="M0 0H44V32H0V0Z" />
+                            </mask>
+                            <path d="M0 0H44V32H0V0Z" fill="#1F4836" />
+                            <path
+                              d="M5 32V0H-5V32H5Z"
+                              fill="#F05947"
+                              mask="url(#path-1-inside-1_563_65768)"
+                            />
+                            <path
+                              d="M18.933 9.994H17.3574L17.1702 11.086H18.7614L18.465 12.958H16.8582L16.4838 15.22H14.487L14.8614 12.958H13.5822L13.2078 15.22H11.211L11.5854 12.958H10.0098L10.3062 11.086H11.8974L12.0846 9.994H10.4934L10.7898 8.122H12.3966L12.771 5.86H14.7678L14.3934 8.122H15.6726L16.047 5.86H18.0438L17.6694 8.122H19.2294L18.933 9.994ZM15.1734 11.086L15.3606 9.994H14.0814L13.8942 11.086H15.1734ZM27.5472 13.196C29.3326 13.196 30.8146 13.716 31.9932 14.756C33.1892 15.796 33.7872 17.2693 33.7872 19.176C33.7872 21.152 33.1459 22.686 31.8632 23.778C30.5806 24.8527 28.9859 25.39 27.0792 25.39C25.4846 25.39 24.0979 25.052 22.9192 24.376C21.7406 23.6827 20.8826 22.6513 20.3452 21.282L24.4012 18.968C24.7826 20.2333 25.6752 20.866 27.0792 20.866C27.7379 20.866 28.2406 20.7187 28.5872 20.424C28.9512 20.112 29.1332 19.696 29.1332 19.176C29.1332 18.6387 28.9512 18.2227 28.5872 17.928C28.2406 17.6333 27.7639 17.486 27.1572 17.486H21.3332L22.0872 6.8H32.7992V11.246H26.3772L26.2472 13.196H27.5472Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="info d-flex justify-content-between align-items-start flex-column"
+                        >
+                          <h1 class="">
+                            Sunt in culpa qui officia deserunt mollit anim id
+                            est laborum
+                          </h1>
+                          <p class="">14 November 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sport-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Sports</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="sport-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  id="lastCard"
+                  class="sport-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="lifehack-artical-container d-flex justify-content-between align-items-start flex-column"
+          >
+            <div
+              class="title-wrapper d-flex justify-content-between align-items-center flex-row w-100"
+            >
+              <h1 class="">Life Hacks</h1>
+              <div
+                class="arow-button-container d-flex justify-content-between align-items-center flex-row"
+              >
+                <svg
+                  class="life-prev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M32.3749 23C32.3749 23.2984 32.2564 23.5846 32.0454 23.7955C31.8344 24.0065 31.5483 24.125 31.2499 24.125H17.4687L22.2987 28.9541C22.51 29.1654 22.6287 29.4521 22.6287 29.751C22.6287 30.0499 22.51 30.3365 22.2987 30.5478C22.0873 30.7592 21.8007 30.8779 21.5018 30.8779C21.2029 30.8779 20.9163 30.7592 20.7049 30.5478L13.9549 23.7978C13.85 23.6933 13.7668 23.5691 13.71 23.4324C13.6533 23.2956 13.624 23.149 13.624 23.001C13.624 22.8529 13.6533 22.7063 13.71 22.5696C13.7668 22.4328 13.85 22.3086 13.9549 22.2041L20.7049 15.4541C20.8096 15.3495 20.9338 15.2664 21.0705 15.2098C21.2072 15.1532 21.3538 15.124 21.5018 15.124C21.6498 15.124 21.7963 15.1532 21.9331 15.2098C22.0698 15.2664 22.194 15.3495 22.2987 15.4541C22.4033 15.5587 22.4863 15.683 22.543 15.8197C22.5996 15.9564 22.6287 16.103 22.6287 16.251C22.6287 16.399 22.5996 16.5455 22.543 16.6822C22.4863 16.819 22.4033 16.9432 22.2987 17.0479L17.4687 21.875H31.2499C31.5483 21.875 31.8344 21.9936 32.0454 22.2045C32.2564 22.4155 32.3749 22.7017 32.3749 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+                <svg
+                  class="life-next"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="45.5"
+                    y="45.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    transform="rotate(180 45.5 45.5)"
+                    stroke="#1F4836"
+                  />
+                  <path
+                    d="M13.6251 23C13.6251 22.7016 13.7436 22.4154 13.9546 22.2045C14.1656 21.9935 14.4517 21.875 14.7501 21.875L28.5313 21.875L23.7013 17.0459C23.49 16.8346 23.3713 16.5479 23.3713 16.249C23.3713 15.9501 23.49 15.6635 23.7013 15.4522C23.9127 15.2408 24.1993 15.1221 24.4982 15.1221C24.7971 15.1221 25.0837 15.2408 25.2951 15.4522L32.0451 22.2022C32.15 22.3067 32.2332 22.4309 32.29 22.5676C32.3467 22.7044 32.376 22.851 32.376 22.999C32.376 23.1471 32.3467 23.2937 32.29 23.4304C32.2332 23.5672 32.15 23.6914 32.0451 23.7959L25.2951 30.5459C25.1904 30.6505 25.0662 30.7336 24.9295 30.7902C24.7928 30.8468 24.6462 30.876 24.4982 30.876C24.3502 30.876 24.2037 30.8468 24.0669 30.7902C23.9302 30.7336 23.806 30.6505 23.7013 30.5459C23.5967 30.4413 23.5137 30.317 23.457 30.1803C23.4004 30.0436 23.3713 29.897 23.3713 29.749C23.3713 29.601 23.4004 29.4545 23.457 29.3178C23.5137 29.181 23.5967 29.0568 23.7013 28.9522L28.5313 24.125L14.7501 24.125C14.4517 24.125 14.1656 24.0064 13.9546 23.7955C13.7436 23.5845 13.6251 23.2983 13.6251 23Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="lifehack-card-wrapper d-flex justify-content-between align-items-center flex-row"
+            >
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img03.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img02.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img01.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  id="lastCard"
+                  class="lifehack-card d-flex justify-content-between align-items-start flex-column"
+                >
+                  <img src="./assets/img/img04.png" alt="" />
+                  <div
+                    class="info-wrap d-flex justify-content-between align-items-start flex-column"
+                  >
+                    <h1 class="">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                    </h1>
+                    <p class="">4 Agustus 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="decoration-img-1">
+          <img src="./assets/img/decorate_square 4.png" alt="" />
+        </div>
+        <div class="decoration-img-2">
+          <img src="./assets/img/decorate_square 3.png" alt="" />
+        </div>
+        <div class="decoration-img-8">
+          <img class="leaf3" src="./assets/img/leaf3 1.png" alt="" />
+        </div>
+      </div>
+      <div
+        class="footer-main d-flex align-items-center justify-content-center flex-column w-100"
+      >
+        <div class="carrot">
+          <img src="./assets/img/carrot.png" alt="" />
+        </div>
+        <div class="decoration">
+          <img src="./assets/img/decoration.png" alt="" />
+        </div>
+        <div
+          class="footer-container d-flex align-items-center justify-content-center flex-column w-100"
+        >
+          <div
+            class="footer-content d-flex align-items-center justify-content-between flex-row w-100"
+          >
+            <div
+              class="footer-contact d-flex align-items-start justify-content-center flex-column"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="87"
+                height="51"
+                viewBox="0 0 87 51"
+                fill="none"
+              >
+                <path
+                  d="M19.2533 29.9348C19.2533 31.7099 17.9093 33.6507 14.9198 33.6507C11.163 33.6507 9.76349 31.3563 9.76349 27.2591V15.2386C9.76349 14.119 9.32529 13.5169 8.55626 13.5169C7.70583 13.5169 6.47089 14.2001 5.32082 15.3473V22.5582C5.32082 23.8969 5.89585 24.5524 7.07537 24.5524V25.1252H0V24.5524C1.17952 24.5524 1.75455 23.8969 1.75455 22.5582V8.92813C1.75455 7.58944 1.17952 6.9339 0 6.9339V6.35944L5.32082 5.62109V13.843C6.93854 12.2593 8.80395 11.3019 10.3126 11.3019C12.2316 11.3019 13.3298 12.7216 13.3298 15.2351V29.0567C13.3298 31.5426 14.0711 32.6346 15.4965 32.6346C16.7852 32.6346 17.4433 31.5961 17.4433 30.7766C17.4433 30.1211 17.1143 29.7105 16.4561 29.7105C15.7979 29.7105 15.4134 30.147 15.3043 30.749C14.7015 30.5299 14.3984 29.902 14.3984 29.2741C14.3984 28.2631 15.112 27.1435 16.6483 27.1435C18.3215 27.1487 19.2533 28.4874 19.2533 29.9348Z"
+                  fill="white"
+                />
+                <path
+                  d="M21.6388 11.3057C25.0942 11.3057 27.5346 14.2832 27.5346 18.5442H18.9507C19.0875 21.0025 20.3224 22.7518 22.4061 22.7518C24.0515 22.7518 25.4233 22.0134 26.9319 20.347L27.3424 20.6471C26.3828 23.5695 24.5174 25.5102 21.6388 25.5102C17.4975 25.5102 15.4121 22.7518 15.4121 18.9548C15.4138 14.6645 18.1557 11.3057 21.6388 11.3057ZM24.081 17.2607C24.081 14.3108 23.1751 12.3442 21.8051 12.3442C20.3242 12.3442 19.0615 14.6662 18.9247 17.4798L24.081 17.2607Z"
+                  fill="white"
+                />
+                <path
+                  d="M34.829 16.7139V14.6386C34.829 13.0549 34.3908 12.3994 33.3481 12.3994C32.25 12.3994 31.5936 13.3016 31.5936 14.8577C31.5936 15.5684 31.0185 16.1411 30.3049 16.1411C29.5913 16.1411 29.044 15.5684 29.044 14.8577C29.044 12.9186 31.1554 11.3057 33.6789 11.3057C36.5853 11.3057 38.397 12.8082 38.397 15.2665V21.3044C38.397 23.5177 38.6984 24.3647 39.5211 24.3647C39.8779 24.3647 40.0425 24.3371 40.207 24.2285L40.3161 24.7477C39.4657 25.267 38.5616 25.5119 37.7371 25.5119C36.3931 25.5119 35.3504 24.8564 34.9676 23.8455C34.0894 24.8012 32.6085 25.5119 31.3753 25.5119C29.264 25.5119 27.9199 24.3095 27.9199 22.3981C27.9182 19.4188 30.9077 16.9864 34.829 16.7139ZM32.9099 23.7351C33.6235 23.7351 34.3094 23.3797 34.829 22.8328V17.5609C32.8822 17.9439 31.455 19.8277 31.455 21.9323C31.4567 23.0519 32.0318 23.7351 32.9099 23.7351Z"
+                  fill="white"
+                />
+                <path
+                  d="M46.2384 22.5601C46.2384 23.8988 46.8134 24.5543 47.9929 24.5543V25.127H40.9176V24.5543C42.0971 24.5543 42.6721 23.8988 42.6721 22.5601V5.07609C42.6721 2.59021 41.9308 1.49822 40.5053 1.49822C39.2167 1.49822 38.5585 2.53673 38.5585 3.35616C38.5585 4.0117 38.8876 4.42228 39.5458 4.42228C40.204 4.42228 40.5885 3.98582 40.6976 3.38376C41.3003 3.60285 41.6034 4.23079 41.6034 4.85873C41.6034 5.86964 40.8898 6.98924 39.3535 6.98924C37.6804 6.98924 36.7485 5.65055 36.7485 4.20319C36.7485 2.42805 38.0926 0.487305 41.0821 0.487305C44.8389 0.487305 46.2384 2.7817 46.2384 6.87883V22.5601Z"
+                  fill="white"
+                />
+                <path
+                  d="M48.0498 11.6863C50.2166 11.6863 52.1634 9.63691 52.1634 7.37012H53.0138V11.6863H55.8942V12.7783H53.0138V20.5637C53.0138 22.5856 53.672 23.7052 54.7961 23.7052C55.3174 23.7052 55.7556 23.5689 56.1956 23.2687L56.4692 23.6517C55.482 24.8265 54.1656 25.5096 52.8493 25.5096C50.8193 25.5096 49.4476 23.9795 49.4476 21.7679V12.7801H48.0498V11.6863Z"
+                  fill="white"
+                />
+                <path
+                  d="M78.3535 24.9906L73.0604 14.0085C72.4854 12.8337 71.7995 12.261 70.8105 12.261L70.7828 11.6865H78.1058V12.261C76.6804 12.261 76.7895 13.2995 77.2554 14.2552L80.3003 20.6467L83.2898 14.0637C83.7835 12.9717 83.0699 12.261 82.0012 12.261V11.6865H86.9115V12.261C85.8411 12.261 85.157 12.9165 84.5525 14.2552L79.2871 25.8928C77.6416 29.1153 74.7613 33.6506 70.62 33.6506C68.2332 33.6506 66.8892 31.7116 66.8892 29.9347C66.8892 28.4874 67.8227 27.1487 69.4941 27.1487C71.0305 27.1487 71.7441 28.2683 71.7441 29.2792C71.7441 29.9071 71.4427 30.5351 70.8382 30.7541C70.7291 30.1538 70.3446 29.7156 69.6864 29.7156C69.0282 29.7156 68.6991 30.1245 68.6991 30.7817C68.6991 31.6012 69.1928 32.5017 70.9491 32.5017C73.8554 32.5034 76.8449 27.9405 78.3535 24.9906Z"
+                  fill="white"
+                />
+                <path
+                  d="M56.7686 24.5527C57.9481 24.5527 58.5231 23.8971 58.5231 22.5584V8.92835C58.5231 7.58967 57.9463 6.93413 56.7686 6.93413V6.35967L62.0894 5.62305V13.8449C63.7071 12.2613 65.5725 11.3038 67.0811 11.3038C69.0002 11.3038 70.0983 12.7236 70.0983 15.2371V22.5567C70.0983 23.8954 70.6734 24.5509 71.8529 24.5509V25.1254H64.7775V24.5509C65.8011 24.5509 67.715 23.3434 66.9547 22.8431C66.6273 22.6274 66.5598 22.2755 66.8438 22.0081C67.6942 21.2077 68.5984 20.5211 67.89 19.3601C67.2976 18.3906 66.6585 19.0409 66.565 18.1025C66.4212 16.6741 68.9084 13.7587 66.1441 13.2377C63.7643 12.7891 63.2741 15.5079 62.9692 16.8121C62.7857 17.597 61.5923 16.8156 61.1627 18.087C60.8614 18.9788 62.5258 19.6016 62.5103 20.9558C62.5033 21.5631 61.5455 21.7407 61.6425 22.6654C61.7222 23.4175 62.8151 24.5492 63.8457 24.5492V25.1237H56.7703V24.5527H56.7686Z"
+                  fill="white"
+                />
+                <path
+                  d="M42.1539 45.6731C42.6475 45.6731 43.1134 45.9181 43.4165 46.3287C42.7861 46.6564 42.4293 47.1757 42.4293 47.776C42.4293 48.9232 44.1838 49.7151 46.6797 49.7151C48.9556 49.7151 50.575 49.0319 50.575 48.0486C50.575 46.9014 49.8077 46.546 46.2692 46.0544C42.3479 45.5075 40.7024 44.3603 40.7024 42.3402C40.7024 41.3017 41.3329 40.1821 42.1833 39.5542C41.3329 38.6519 40.8392 37.4237 40.8392 36.0022C40.8392 32.8884 43.226 30.7302 46.6537 30.7302C47.0365 30.7302 47.395 30.7578 47.7501 30.8113C47.6687 30.5922 47.6132 30.3473 47.6132 30.1006C47.6132 28.843 48.985 27.751 50.5196 27.751C51.6437 27.751 52.385 28.2978 52.385 29.1173C52.385 29.8556 51.8359 30.3473 51.0132 30.3473C50.0797 30.3473 49.9151 29.6917 49.1478 29.6917C48.8465 29.6917 48.6542 29.9108 48.6542 30.2645C48.6542 30.6474 48.8742 31.0287 49.2569 31.1943C51.176 32.0137 52.4387 33.7354 52.4387 36.0022C52.4387 39.1436 50.0797 41.3017 46.652 41.3017C45.1156 41.3017 43.7993 40.8653 42.812 40.0993C42.5107 40.3995 42.3738 40.6996 42.3738 41.0015C42.3738 41.7934 43.6088 42.3678 46.3229 42.668C51.1778 43.2148 52.9323 44.362 52.9323 46.9566C52.9323 49.6616 50.6824 51.0003 46.2674 51.0003C42.4275 51.0003 40.2607 49.8531 40.2607 47.7778C40.2607 46.603 41.0835 45.6731 42.1539 45.6731ZM46.652 40.2097C48.1051 40.2097 49.0924 38.4881 49.0924 36.0022C49.0924 33.5163 48.1051 31.8222 46.652 31.8222C45.1988 31.8222 44.1838 33.5163 44.1838 36.0022C44.1838 38.4881 45.1988 40.2097 46.652 40.2097Z"
+                  fill="white"
+                />
+                <path
+                  d="M60.1726 30.7305C63.848 30.7305 66.8375 33.3526 66.8375 37.8327C66.8375 42.3128 63.848 44.935 60.1726 44.935C56.4972 44.935 53.48 42.3128 53.48 37.8327C53.48 33.3544 56.4972 30.7305 60.1726 30.7305ZM60.1726 43.843C61.818 43.843 63.1344 41.6021 63.1344 37.8327C63.1344 34.0634 61.818 31.8225 60.1726 31.8225C58.5271 31.8225 57.1831 34.0634 57.1831 37.8327C57.1831 41.6038 58.5271 43.843 60.1726 43.843Z"
+                  fill="white"
+                />
+              </svg>
+              <div
+                class="contact-wrap d-flex justify-content-center align-items-start flex-column"
+              >
+                <div
+                  class="location d-flex justify-content-center align-items-start flex-row"
+                >
+                  <img src="assets/img/location.png" alt="" />
+                  <h1 class="fs-xsm">
+                    RT.5/RW.2, Gambir, Kecamatan Gambir, Kota Jakarta Pusat,
+                    Daerah Khusus Ibukota Jakarta 10110
+                  </h1>
+                </div>
+                <div
+                  class="number d-flex justify-content-center align-items-start flex-row"
+                >
+                  <img src="assets/img/faq.png" alt="" />
+                  <h1 class="fs-xsm">+62 865 2180 1298</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="footer-links d-flex justify-content-center align-items-start flex-column"
+            >
+              <div
+                class="nav-wrap d-flex justify-content-center align-items-start flex-column"
+              >
+                <h1 class="fs-xsm">Navigation</h1>
+                <div
+                  class="navigation-bar d-flex justify-content-center align-items-start flex-row w-100"
+                >
+                  <a class="fs-xsm" href="">Home</a>
+                  <p>|</p>
+                  <a class="fs-xsm" href="">Product</a>
+                  <p>|</p>
+                  <a class="fs-xsm" href="">Blog</a>
+                  <p>|</p>
+                  <a class="fs-xsm" href="">About Us</a>
+                </div>
+              </div>
+              <div
+                class="links-heading d-flex justify-content-center align-items-start flex-column"
+              >
+                <h1 class="fs-xsm">Follow Us</h1>
+                <div
+                  class="links d-flex justify-content-center align-items-start flex-row"
+                >
+                  <svg
+                    width="36"
+                    height="37"
+                    viewBox="0 0 36 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      y="1.25"
+                      width="34.5"
+                      height="35.25"
+                      rx="7.5"
+                      stroke="white"
+                    />
+                    <path
+                      d="M26.7488 18.75L26.75 18.75C26.8163 18.75 26.8799 18.7237 26.9268 18.6768C26.9737 18.6299 27 18.5663 27 18.5V14.75C27 14.6837 26.9737 14.6201 26.9268 14.5732C26.8799 14.5263 26.8163 14.5 26.75 14.5H26.7495C25.424 14.4986 24.1531 13.9714 23.2158 13.0342C22.2786 12.0969 21.7514 10.826 21.75 9.50052V9.5C21.75 9.43369 21.7237 9.37011 21.6768 9.32322C21.6299 9.27634 21.5663 9.25 21.5 9.25H17.75C17.6837 9.25 17.6201 9.27634 17.5732 9.32322C17.5263 9.37011 17.5 9.4337 17.5 9.5V21.875V21.8752C17.4998 22.3002 17.3856 22.7174 17.1692 23.0832C16.9529 23.449 16.6424 23.75 16.27 23.9549C15.8977 24.1598 15.4772 24.261 15.0524 24.248C14.6276 24.235 14.2141 24.1083 13.855 23.881C13.4959 23.6538 13.2043 23.3343 13.0107 22.956C12.8171 22.5776 12.7286 22.1543 12.7544 21.7301C12.7801 21.3059 12.9193 20.8964 13.1573 20.5443C13.3952 20.1921 13.7233 19.9103 14.1073 19.7282M26.7488 18.75L14.3216 20.18M26.7488 18.75C25.263 18.7535 23.7986 18.3962 22.4813 17.7089L21.75 17.3274V18.1522V21.875C21.75 23.6321 21.052 25.3172 19.8096 26.5596C18.5672 27.802 16.8821 28.5 15.125 28.5C13.3679 28.5 11.6828 27.802 10.4404 26.5596C9.19799 25.3172 8.5 23.6321 8.5 21.875C8.5 18.6514 10.8554 15.8061 13.9565 15.2535M26.7488 18.75L22.25 18.7124V21.875C22.25 23.7647 21.4993 25.5769 20.1631 26.9131C18.8269 28.2493 17.0147 29 15.125 29C13.2353 29 11.4231 28.2493 10.0869 26.9131C8.75067 25.5769 8 23.7647 8 21.875C8 18.4156 10.5228 15.3575 13.8687 14.7613M14.1073 19.7282L14.3216 20.18M14.1073 19.7282C14.1073 19.7282 14.1072 19.7283 14.1072 19.7283L14.3216 20.18M14.1073 19.7282C14.15 19.7079 14.1861 19.676 14.2113 19.636C14.2366 19.596 14.25 19.5497 14.25 19.5024V19.5022V15.5V15.4998C14.25 15.4632 14.242 15.4271 14.2266 15.394C14.2111 15.3609 14.1886 15.3316 14.1606 15.3081C14.1326 15.2846 14.0998 15.2676 14.0645 15.2581C14.0292 15.2487 13.9924 15.2471 13.9565 15.2535M14.3216 20.18C14.4498 20.1191 14.5581 20.0231 14.634 19.9032C14.7098 19.7832 14.75 19.6441 14.75 19.5022V15.5C14.75 15.3904 14.7261 15.2821 14.6797 15.1827C14.6334 15.0833 14.5658 14.9953 14.4818 14.9249C14.3978 14.8545 14.2994 14.8033 14.1934 14.7751C14.0875 14.7468 13.9767 14.7421 13.8687 14.7613M13.9565 15.2535L13.8687 14.7613M13.9565 15.2535C13.9564 15.2535 13.9563 15.2535 13.9562 15.2535L13.8687 14.7613"
+                      fill="white"
+                      stroke="#1F4836"
+                    />
+                  </svg>
+                  <svg
+                    width="36"
+                    height="37"
+                    viewBox="0 0 36 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1.25"
+                      width="34.5"
+                      height="34.5"
+                      rx="7.5"
+                      stroke="white"
+                    />
+                    <path
+                      d="M22.75 8.75H13.75C12.3581 8.75149 11.0236 9.30509 10.0393 10.2893C9.05509 11.2736 8.50149 12.6081 8.5 14V23C8.50149 24.3919 9.05509 25.7264 10.0393 26.7107C11.0236 27.6949 12.3581 28.2485 13.75 28.25H22.75C24.1419 28.2485 25.4764 27.6949 26.4607 26.7107C27.4449 25.7264 27.9985 24.3919 28 23V14C27.9985 12.6081 27.4449 11.2736 26.4607 10.2893C25.4764 9.30509 24.1419 8.75149 22.75 8.75ZM18.25 23C17.36 23 16.49 22.7361 15.7499 22.2416C15.0099 21.7471 14.4331 21.0443 14.0925 20.2221C13.7519 19.3998 13.6628 18.495 13.8365 17.6221C14.0101 16.7492 14.4387 15.9474 15.068 15.318C15.6974 14.6887 16.4992 14.2601 17.3721 14.0865C18.245 13.9128 19.1498 14.0019 19.9721 14.3425C20.7943 14.6831 21.4971 15.2599 21.9916 15.9999C22.4861 16.74 22.75 17.61 22.75 18.5C22.7488 19.6931 22.2743 20.837 21.4306 21.6806C20.587 22.5243 19.4431 22.9988 18.25 23ZM23.875 14C23.6525 14 23.435 13.934 23.25 13.8104C23.065 13.6868 22.9208 13.5111 22.8356 13.3055C22.7505 13.1 22.7282 12.8738 22.7716 12.6555C22.815 12.4373 22.9222 12.2368 23.0795 12.0795C23.2368 11.9222 23.4373 11.815 23.6555 11.7716C23.8738 11.7282 24.1 11.7505 24.3055 11.8356C24.5111 11.9208 24.6868 12.065 24.8104 12.25C24.934 12.435 25 12.6525 25 12.875C25 13.1734 24.8815 13.4595 24.6705 13.6705C24.4595 13.8815 24.1734 14 23.875 14ZM21.25 18.5C21.25 19.0933 21.0741 19.6734 20.7444 20.1667C20.4148 20.6601 19.9462 21.0446 19.3981 21.2716C18.8499 21.4987 18.2467 21.5581 17.6647 21.4424C17.0828 21.3266 16.5482 21.0409 16.1287 20.6213C15.7091 20.2018 15.4234 19.6672 15.3076 19.0853C15.1919 18.5033 15.2513 17.9001 15.4784 17.3519C15.7054 16.8038 16.0899 16.3352 16.5833 16.0056C17.0766 15.6759 17.6567 15.5 18.25 15.5C19.0456 15.5 19.8087 15.8161 20.3713 16.3787C20.9339 16.9413 21.25 17.7044 21.25 18.5Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    width="36"
+                    height="37"
+                    viewBox="0 0 36 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      y="1.25"
+                      width="34.5"
+                      height="34.4337"
+                      rx="7.5"
+                      stroke="white"
+                    />
+                    <path
+                      d="M27.5 18.4989C27.4969 20.8818 26.6226 23.1814 25.0417 24.9645C23.4609 26.7475 21.2826 27.891 18.9171 28.1795C18.8645 28.1855 18.8111 28.1802 18.7607 28.164C18.7102 28.1479 18.6637 28.1212 18.6243 28.0858C18.5848 28.0503 18.5534 28.0069 18.532 27.9585C18.5105 27.91 18.4996 27.8575 18.5 27.8045V20.7489H20.75C20.8528 20.7491 20.9545 20.7282 21.0489 20.6874C21.1433 20.6467 21.2283 20.5869 21.2987 20.5119C21.369 20.4369 21.4232 20.3483 21.4578 20.2515C21.4924 20.1547 21.5068 20.0518 21.5 19.9492C21.4834 19.7563 21.3944 19.5769 21.2509 19.447C21.1074 19.317 20.9201 19.2463 20.7265 19.2489H18.5V16.9989C18.5 16.6011 18.658 16.2195 18.9393 15.9382C19.2206 15.6569 19.6021 15.4989 20 15.4989H21.5C21.6028 15.4991 21.7045 15.4782 21.7989 15.4374C21.8933 15.3967 21.9783 15.3369 22.0487 15.2619C22.119 15.1869 22.1732 15.0983 22.2078 15.0015C22.2424 14.9047 22.2568 14.8018 22.25 14.6992C22.2334 14.506 22.1441 14.3263 22.0002 14.1963C21.8563 14.0664 21.6685 13.9958 21.4746 13.9989H20C19.2043 13.9989 18.4412 14.3149 17.8786 14.8776C17.316 15.4402 17 16.2032 17 16.9989V19.2489H14.75C14.6471 19.2487 14.5454 19.2696 14.451 19.3103C14.3566 19.3511 14.2716 19.4108 14.2013 19.4858C14.1309 19.5608 14.0768 19.6495 14.0421 19.7463C14.0075 19.8431 13.9931 19.946 14 20.0486C14.0165 20.2418 14.1058 20.4215 14.2497 20.5514C14.3936 20.6814 14.5814 20.752 14.7753 20.7489H17V27.8064C17.0003 27.8593 16.9894 27.9117 16.968 27.9601C16.9467 28.0085 16.9153 28.0518 16.876 28.0873C16.8366 28.1227 16.7903 28.1494 16.7399 28.1656C16.6895 28.1818 16.6363 28.1872 16.5837 28.1814C14.155 27.8856 11.9258 26.6888 10.3374 24.8278C8.74901 22.9668 7.91716 20.5774 8.00652 18.1323C8.19402 13.0698 12.2946 8.95419 17.3609 8.75732C18.6725 8.70651 19.981 8.92077 21.2079 9.38728C22.4348 9.85379 23.5551 10.563 24.5016 11.4724C25.4481 12.3818 26.2015 13.4728 26.7167 14.6801C27.2319 15.8874 27.4983 17.1862 27.5 18.4989Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-divider d-flex w-100"></div>
+          <div
+            class="branch-name d-flex align-items-center justify-content-between flex-row w-100"
+          >
+            <div
+              class="footer-wrap d-flex align-items-center justify-content-center flex-row"
+            >
+              <h1 class="fs-xsm">Our branch coverage :</h1>
+              <div
+                class="name d-flex align-items-center justify-content-center flex-row"
+              >
+                <h1 class="fs-xsm">Jabodetabek</h1>
+                <p>|</p>
+                <h1 class="fs-xsm">Bandung</h1>
+                <p>|</p>
+                <h1 class="fs-xsm">Medan</h1>
+                <p>|</p>
+                <h1 class="fs-xsm">Pekanbaru</h1>
+                <p>|</p>
+                <h1 class="fs-xsm">Surabaya</h1>
+                <p>|</p>
+                <h1 class="fs-xsm">Palembang</h1>
+                <p>|</p>
+                <h1 class="fs-xsm">Malang</h1>
+              </div>
+            </div>
+            <div
+              class="copyright d-flex align-items-center justify-content-center flex-row"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M9.5 7.85555H11.1667C11.3877 7.85555 11.5996 7.94335 11.7559 8.09963C11.9122 8.25591 12 8.46787 12 8.68888C12 8.9099 12.0878 9.12186 12.2441 9.27814C12.4004 9.43442 12.6123 9.52222 12.8333 9.52222C13.0543 9.52222 13.2663 9.43442 13.4226 9.27814C13.5789 9.12186 13.6667 8.9099 13.6667 8.68888C13.6667 8.02584 13.4033 7.38996 12.9344 6.92112C12.4656 6.45228 11.8297 6.18888 11.1667 6.18888H9.5C8.83696 6.18888 8.20108 6.45228 7.73224 6.92112C7.26339 7.38996 7 8.02584 7 8.68888V12.0222C7 12.6853 7.26339 13.3211 7.73224 13.79C8.20108 14.2588 8.83696 14.5222 9.5 14.5222H11.1667C11.8297 14.5222 12.4656 14.2588 12.9344 13.79C13.4033 13.3211 13.6667 12.6853 13.6667 12.0222C13.6667 11.8012 13.5789 11.5892 13.4226 11.433C13.2663 11.2767 13.0543 11.1889 12.8333 11.1889C12.6123 11.1889 12.4004 11.2767 12.2441 11.433C12.0878 11.5892 12 11.8012 12 12.0222C12 12.2432 11.9122 12.4552 11.7559 12.6115C11.5996 12.7678 11.3877 12.8555 11.1667 12.8555H9.5C9.27899 12.8555 9.06703 12.7678 8.91075 12.6115C8.75447 12.4552 8.66667 12.2432 8.66667 12.0222V8.68888C8.66667 8.46787 8.75447 8.25591 8.91075 8.09963C9.06703 7.94335 9.27899 7.85555 9.5 7.85555ZM10.3333 2.02222C8.68516 2.02222 7.07399 2.51096 5.70358 3.42664C4.33318 4.34231 3.26507 5.6438 2.63434 7.16652C2.00361 8.68924 1.83858 10.3648 2.16013 11.9813C2.48167 13.5978 3.27534 15.0827 4.44078 16.2481C5.60622 17.4135 7.09108 18.2072 8.70758 18.5288C10.3241 18.8503 11.9996 18.6853 13.5224 18.0545C15.0451 17.4238 16.3466 16.3557 17.2622 14.9853C18.1779 13.6149 18.6667 12.0037 18.6667 10.3555C18.6667 9.2612 18.4511 8.17757 18.0323 7.16652C17.6135 6.15547 16.9997 5.23681 16.2259 4.46299C15.4521 3.68917 14.5334 3.07534 13.5224 2.65655C12.5113 2.23776 11.4277 2.02222 10.3333 2.02222ZM10.3333 17.0222C9.01479 17.0222 7.72586 16.6312 6.62953 15.8987C5.53321 15.1661 4.67872 14.1249 4.17414 12.9068C3.66956 11.6886 3.53753 10.3482 3.79477 9.05495C4.052 7.76174 4.68694 6.57385 5.61929 5.6415C6.55164 4.70915 7.73953 4.07422 9.03273 3.81698C10.3259 3.55975 11.6664 3.69177 12.8846 4.19635C14.1027 4.70094 15.1439 5.55542 15.8765 6.65175C16.609 7.74808 17 9.03701 17 10.3555C17 12.1237 16.2976 13.8194 15.0474 15.0696C13.7971 16.3198 12.1014 17.0222 10.3333 17.0222Z"
+                  fill="#FCFCFC"
+                />
+              </svg>
+              <h1 class="fs-xsm">2023 All Rights Reserved</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="toolbar">
+        <nav class="tab-bar">
+          <div class="tab-bar__item ">
+            <a href="./home.html">
+              <div class="icon-active fs-xsm2 font-secondary">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.25391 14V15.7499C8.25391 16.4403 7.6942 17 7.00376 17C6.31344 17 5.75377 16.4405 5.75361 15.7501L5.75253 11.2523C5.75216 9.69641 6.38243 8.20681 7.49941 7.12368L7.62506 7.00184C9.89586 4.79985 13.5284 4.87853 15.7017 7.17677C16.6985 8.23085 17.2539 9.62654 17.2539 11.0773V15.75C17.2539 16.4404 16.6943 17 16.0039 17C15.3136 17 14.7539 16.4404 14.7539 15.75V14C14.7539 12.3431 13.4108 11 11.7539 11H11.2539C9.59705 11 8.25391 12.3431 8.25391 14Z"
+                    fill="#1E7549"
+                    fill-opacity="0.4"
+                  />
+                  <path
+                    d="M17.3113 7.8787L11.0652 1.98261L11.0527 1.97089C10.7657 1.70819 10.3907 1.5625 10.0016 1.5625C9.61245 1.5625 9.23744 1.70819 8.95039 1.97089L8.93711 1.98261L2.69258 7.8787C2.53422 8.02521 2.4078 8.20283 2.32123 8.40044C2.23466 8.59805 2.1898 8.8114 2.18945 9.02714V16.2498C2.18945 16.6642 2.35407 17.0616 2.6471 17.3546C2.94012 17.6477 3.33755 17.8123 3.75195 17.8123H7.50195C7.91635 17.8123 8.31378 17.6477 8.60681 17.3546C8.89983 17.0616 9.06445 16.6642 9.06445 16.2498V12.8123H10.9395V16.2498C10.9395 16.6642 11.1041 17.0616 11.3971 17.3546C11.6901 17.6477 12.0876 17.8123 12.502 17.8123H16.252C16.6664 17.8123 17.0638 17.6477 17.3568 17.3546C17.6498 17.0616 17.8145 16.6642 17.8145 16.2498V9.02714C17.8141 8.8114 17.7692 8.59805 17.6827 8.40044C17.5961 8.20283 17.4697 8.02521 17.3113 7.8787ZM15.9395 15.9373H12.8145V12.4998C12.8145 12.2946 12.774 12.0914 12.6955 11.9018C12.617 11.7123 12.5019 11.54 12.3568 11.3949C12.2117 11.2498 12.0395 11.1348 11.8499 11.0562C11.6603 10.9777 11.4571 10.9373 11.252 10.9373H8.75195C8.33755 10.9373 7.94012 11.1019 7.6471 11.3949C7.35407 11.688 7.18945 12.0854 7.18945 12.4998V15.9373H4.06445V9.16229L10.002 3.55682L15.9395 9.16229V15.9373Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+              <div class="icon fs-xsm2 font-secondary">
+                <svg
+                  class="default-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M18.0594 7.8787L11.8133 1.98261L11.8008 1.97089C11.5137 1.70819 11.1387 1.5625 10.7496 1.5625C10.3605 1.5625 9.98549 1.70819 9.69844 1.97089L9.68516 1.98261L3.44062 7.8787C3.28227 8.02521 3.15585 8.20283 3.06927 8.40044C2.9827 8.59805 2.93784 8.8114 2.9375 9.02714V16.2498C2.9375 16.6642 3.10212 17.0616 3.39515 17.3546C3.68817 17.6477 4.0856 17.8123 4.5 17.8123H8.25C8.6644 17.8123 9.06183 17.6477 9.35485 17.3546C9.64788 17.0616 9.8125 16.6642 9.8125 16.2498V12.8123H11.6875V16.2498C11.6875 16.6642 11.8521 17.0616 12.1451 17.3546C12.4382 17.6477 12.8356 17.8123 13.25 17.8123H17C17.4144 17.8123 17.8118 17.6477 18.1049 17.3546C18.3979 17.0616 18.5625 16.6642 18.5625 16.2498V9.02714C18.5622 8.8114 18.5173 8.59805 18.4307 8.40044C18.3442 8.20283 18.2177 8.02521 18.0594 7.8787ZM16.6875 15.9373H13.5625V12.4998C13.5625 12.2946 13.5221 12.0914 13.4436 11.9018C13.365 11.7123 13.2499 11.54 13.1049 11.3949C12.9598 11.2498 12.7875 11.1348 12.5979 11.0562C12.4084 10.9777 12.2052 10.9373 12 10.9373H9.5C9.0856 10.9373 8.68817 11.1019 8.39515 11.3949C8.10212 11.688 7.9375 12.0854 7.9375 12.4998V15.9373H4.8125V9.16229L10.75 3.55682L16.6875 9.16229V15.9373Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
+                Home
+              </div>
+            </a>
+          </div>
+          <div class="tab-bar__item">
+            <a href="./menu.html">
+              <div class="icon-active fs-xsm2 font-secondary">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.3879 9.52289L16.2245 11.3791C14.8441 13.5814 11.507 13.1058 10.7967 10.6056L9.91375 7.49743C9.42749 5.78573 10.5499 3.95909 12.3178 4.16129C13.7106 4.32059 14.9865 4.76917 16.3528 5.44994C17.851 6.19639 18.2769 8.10464 17.3879 9.52289Z"
+                    fill="#A5C8B6"
+                  />
+                  <path
+                    d="M19.7723 4.94432C19.7241 4.74434 19.6367 4.5559 19.5152 4.38989C19.3937 4.22388 19.2405 4.08359 19.0645 3.97713C16.5578 2.46077 13.684 1.65918 10.7544 1.65918C7.8247 1.65918 4.95089 2.46077 2.44419 3.97713C2.26886 4.08372 2.11623 4.22381 1.99503 4.38939C1.87383 4.55497 1.78643 4.7428 1.73783 4.94216C1.68922 5.14151 1.68036 5.34849 1.71175 5.55128C1.74313 5.75406 1.81416 5.94867 1.92076 6.12401L9.42076 18.4099C9.56003 18.6395 9.75613 18.8294 9.99014 18.9611C10.2241 19.0929 10.4882 19.1621 10.7567 19.1621C11.0252 19.1621 11.2892 19.0929 11.5233 18.9611C11.7573 18.8294 11.9534 18.6395 12.0926 18.4099L19.5926 6.12401C19.6991 5.94903 19.7698 5.75466 19.8007 5.55217C19.8315 5.34967 19.8219 5.14306 19.7723 4.94432ZM7.55123 11.7513L5.99888 9.2076C6.12321 9.17575 6.25101 9.15948 6.37935 9.15916C6.67933 9.1598 6.97279 9.24679 7.22467 9.40972C7.47655 9.57266 7.6762 9.80465 7.79977 10.078C7.92335 10.3514 7.96562 10.6545 7.92155 10.9512C7.87748 11.248 7.74892 11.5257 7.55123 11.7513ZM12.5512 14.0521C12.4027 13.8153 12.3203 13.543 12.3128 13.2636C12.3053 12.9842 12.3729 12.7078 12.5086 12.4634C12.6442 12.219 12.843 12.0154 13.0841 11.874C13.3252 11.7325 13.5998 11.6583 13.8794 11.6592C13.9231 11.6592 13.9669 11.6592 14.0098 11.6646L12.5512 14.0521ZM15.034 9.98338C14.2894 9.71599 13.4752 9.71367 12.7291 9.97682C11.9829 10.24 11.3503 10.7525 10.9381 11.4279C10.5259 12.1033 10.3594 12.9002 10.4665 13.6841C10.5736 14.468 10.9479 15.191 11.5262 15.731L10.7544 16.9998L8.54888 13.3857C9.05974 12.9691 9.44004 12.4144 9.64445 11.7877C9.84886 11.161 9.86876 10.4887 9.70179 9.85102C9.53481 9.21332 9.18799 8.63708 8.70267 8.19098C8.21735 7.74487 7.61399 7.44772 6.96451 7.33494C8.464 6.78246 10.0662 6.56478 11.6588 6.69718C13.2513 6.82957 14.7956 7.30884 16.1833 8.10135L15.034 9.98338ZM17.1606 6.50291C15.2125 5.37953 13.0032 4.78817 10.7544 4.78817C8.50553 4.78817 6.29624 5.37953 4.3481 6.50291L3.68794 5.4201C5.838 4.18441 8.2745 3.53412 10.7544 3.53412C13.2342 3.53412 15.6707 4.18441 17.8208 5.4201L17.1606 6.50291Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+              <div class="icon fs-xsm2 font-secondary">
+                <svg
+                  class="default-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M19.2674 4.84764C19.2192 4.64766 19.1318 4.45922 19.0103 4.29321C18.8888 4.1272 18.7356 3.98691 18.5596 3.88045C16.0529 2.36409 13.1791 1.5625 10.2495 1.5625C7.31982 1.5625 4.44601 2.36409 1.93931 3.88045C1.76397 3.98704 1.61135 4.12713 1.49015 4.29271C1.36895 4.45829 1.28155 4.64612 1.23295 4.84548C1.18434 5.04483 1.17548 5.25181 1.20686 5.4546C1.23825 5.65738 1.30927 5.85199 1.41587 6.02733L8.91588 18.3133C9.05515 18.5429 9.25125 18.7327 9.48525 18.8644C9.71926 18.9962 9.98327 19.0654 10.2518 19.0654C10.5204 19.0654 10.7844 18.9962 11.0184 18.8644C11.2524 18.7327 11.4485 18.5429 11.5878 18.3133L19.0878 6.02733C19.1942 5.85235 19.265 5.65798 19.2958 5.45549C19.3266 5.25299 19.317 5.04638 19.2674 4.84764ZM7.04634 11.6547L5.494 9.11092C5.61833 9.07907 5.74613 9.0628 5.87447 9.06248C6.17445 9.06313 6.46791 9.15011 6.71979 9.31304C6.97166 9.47598 7.17132 9.70797 7.29489 9.98132C7.41847 10.2547 7.46074 10.5578 7.41667 10.8545C7.37259 11.1513 7.24403 11.429 7.04634 11.6547ZM12.0463 13.9555C11.8978 13.7187 11.8154 13.4464 11.8079 13.1669C11.8004 12.8875 11.868 12.6111 12.0037 12.3667C12.1393 12.1223 12.3381 11.9188 12.5792 11.7773C12.8203 11.6358 13.0949 11.5617 13.3745 11.5625C13.4182 11.5625 13.462 11.5625 13.5049 11.568L12.0463 13.9555ZM14.5292 9.8867C13.7845 9.61931 12.9704 9.61699 12.2242 9.88014C11.478 10.1433 10.8454 10.6558 10.4332 11.3312C10.0211 12.0066 9.85447 12.8035 9.96161 13.5874C10.0688 14.3714 10.4431 15.0943 11.0213 15.6344L10.2495 16.9031L8.044 13.289C8.55486 12.8724 8.93516 12.3177 9.13957 11.691C9.34398 11.0643 9.36388 10.392 9.1969 9.75434C9.02992 9.11664 8.68311 8.5404 8.19778 8.0943C7.71246 7.64819 7.10911 7.35104 6.45963 7.23826C7.95912 6.68578 9.56134 6.4681 11.1539 6.6005C12.7464 6.73289 14.2907 7.21216 15.6784 8.00467L14.5292 9.8867ZM16.6557 6.40623C14.7076 5.28285 12.4983 4.69149 10.2495 4.69149C8.00064 4.69149 5.79135 5.28285 3.84322 6.40623L3.18306 5.32342C5.33312 4.08773 7.76962 3.43744 10.2495 3.43744C12.7293 3.43744 15.1658 4.08773 17.3159 5.32342L16.6557 6.40623Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
+                Menu
+              </div>
+            </a>
+          </div>
+          <div class="tab-bar__item">
+            <a href="./program.html">
+            <div class="add-button">
+              <div class="icon">
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.07187 16.2133H23.0052L24.4052 7.34668H6.67188L8.07187 16.2133Z"
+                    fill="#F05947"
+                  />
+                  <path
+                    d="M25.5698 6.3718C25.4467 6.22426 25.2926 6.10558 25.1186 6.02412C24.9445 5.94266 24.7547 5.90043 24.5625 5.90039H7.28125L6.81422 3.32133C6.72252 2.8173 6.45682 2.36145 6.06346 2.03325C5.6701 1.70504 5.17402 1.52531 4.66172 1.52539H2.6875C2.3394 1.52539 2.00556 1.66367 1.75942 1.90981C1.51328 2.15595 1.375 2.48979 1.375 2.83789C1.375 3.18599 1.51328 3.51983 1.75942 3.76597C2.00556 4.01211 2.3394 4.15039 2.6875 4.15039H4.29641L7.02094 19.1348C7.09409 19.5328 7.24539 19.9123 7.46609 20.2515C7.07535 20.7087 6.80901 21.2589 6.69277 21.849C6.57653 22.439 6.6143 23.0491 6.80245 23.6204C6.9906 24.1916 7.32278 24.7047 7.76694 25.1102C8.21111 25.5157 8.75227 25.7999 9.33823 25.9354C9.9242 26.0709 10.5352 26.0532 11.1123 25.8838C11.6894 25.7145 12.2131 25.3993 12.6329 24.9686C13.0528 24.538 13.3545 24.0064 13.5091 23.4252C13.6638 22.844 13.666 22.2327 13.5156 21.6504H17.2344C17.0519 22.3571 17.0949 23.1031 17.3574 23.7842C17.6199 24.4652 18.0888 25.0471 18.6983 25.4485C19.3079 25.8499 20.0277 26.0507 20.757 26.0228C21.4864 25.9949 22.1887 25.7397 22.7658 25.2929C23.343 24.8461 23.766 24.2301 23.9757 23.531C24.1854 22.8319 24.1713 22.0847 23.9353 21.3941C23.6994 20.7034 23.2535 20.1037 22.6599 19.679C22.0664 19.2543 21.3549 19.0258 20.625 19.0254H10.0342C9.93193 19.0253 9.83293 18.9893 9.7544 18.9238C9.67587 18.8582 9.62279 18.7673 9.60437 18.6666L9.35063 17.2754H21.5109C22.2283 17.2754 22.9229 17.0236 23.4736 16.5638C24.0243 16.1041 24.3961 15.4656 24.5242 14.7598L25.8542 7.44695C25.8884 7.25785 25.8807 7.06355 25.8315 6.87777C25.7824 6.69199 25.6931 6.51926 25.5698 6.3718ZM11 22.5254C11 22.6985 10.9487 22.8676 10.8525 23.0115C10.7564 23.1554 10.6197 23.2676 10.4598 23.3338C10.3 23.4 10.124 23.4173 9.9543 23.3836C9.78456 23.3498 9.62865 23.2665 9.50628 23.1441C9.38391 23.0217 9.30058 22.8658 9.26681 22.6961C9.23305 22.5264 9.25038 22.3504 9.31661 22.1905C9.38283 22.0307 9.49498 21.894 9.63888 21.7979C9.78277 21.7017 9.95194 21.6504 10.125 21.6504C10.3571 21.6504 10.5796 21.7426 10.7437 21.9067C10.9078 22.0708 11 22.2933 11 22.5254ZM20.625 23.4004C20.4519 23.4004 20.2828 23.3491 20.1389 23.2529C19.995 23.1568 19.8828 23.0201 19.8166 22.8602C19.7504 22.7004 19.7331 22.5244 19.7668 22.3547C19.8006 22.185 19.8839 22.029 20.0063 21.9067C20.1287 21.7843 20.2846 21.701 20.4543 21.6672C20.624 21.6334 20.8 21.6508 20.9598 21.717C21.1197 21.7832 21.2564 21.8954 21.3525 22.0393C21.4487 22.1832 21.5 22.3523 21.5 22.5254C21.5 22.7575 21.4078 22.98 21.2437 23.1441C21.0796 23.3082 20.8571 23.4004 20.625 23.4004ZM21.9375 14.2916C21.9192 14.3917 21.8666 14.4823 21.7887 14.5477C21.7109 14.6132 21.6127 14.6495 21.5109 14.6504H8.87375L7.76031 8.52539H22.9897L21.9375 14.2916Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </a>
+            <p class="fs-xsm2 font-secondary">Order</p>
+          </div>
+          <div class="tab-bar__item active">
+            <a href="./jelahjah.html">
+              <div class="icon-active fs-xsm2 font-secondary">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 8V14C18 14.5523 17.5523 15 17 15H10.5C9.94772 15 9.5 14.5523 9.5 14V8C9.5 7.44772 9.94772 7 10.5 7H17C17.5523 7 18 7.44772 18 8Z"
+                    fill="#A5C8B6"
+                  />
+                  <g clip-path="url(#clip0_3292_84638)">
+                    <path
+                      d="M7.4375 8.4375C7.4375 8.18886 7.53627 7.9504 7.71209 7.77459C7.8879 7.59877 8.12636 7.5 8.375 7.5H14C14.2486 7.5 14.4871 7.59877 14.6629 7.77459C14.8387 7.9504 14.9375 8.18886 14.9375 8.4375C14.9375 8.68614 14.8387 8.9246 14.6629 9.10041C14.4871 9.27623 14.2486 9.375 14 9.375H8.375C8.12636 9.375 7.8879 9.27623 7.71209 9.10041C7.53627 8.9246 7.4375 8.68614 7.4375 8.4375ZM8.375 12.5H14C14.2486 12.5 14.4871 12.4012 14.6629 12.2254C14.8387 12.0496 14.9375 11.8111 14.9375 11.5625C14.9375 11.3139 14.8387 11.0754 14.6629 10.8996C14.4871 10.7238 14.2486 10.625 14 10.625H8.375C8.12636 10.625 7.8879 10.7238 7.71209 10.8996C7.53627 11.0754 7.4375 11.3139 7.4375 11.5625C7.4375 11.8111 7.53627 12.0496 7.71209 12.2254C7.8879 12.4012 8.12636 12.5 8.375 12.5ZM18.6875 5V14.375C18.6875 14.6623 18.6309 14.9467 18.521 15.2121C18.4111 15.4775 18.2499 15.7187 18.0468 15.9218C17.8437 16.1249 17.6025 16.2861 17.3371 16.396C17.0717 16.5059 16.7873 16.5625 16.5 16.5625H3.0625C2.39946 16.5625 1.76357 16.2991 1.29473 15.8303C0.825892 15.3614 0.5625 14.7255 0.5625 14.0625V6.875C0.5625 6.62636 0.661272 6.3879 0.837087 6.21209C1.0129 6.03627 1.25136 5.9375 1.5 5.9375C1.74864 5.9375 1.9871 6.03627 2.16291 6.21209C2.33873 6.3879 2.4375 6.62636 2.4375 6.875V14.0625C2.4375 14.2283 2.50335 14.3872 2.62056 14.5044C2.73777 14.6217 2.89674 14.6875 3.0625 14.6875C3.22826 14.6875 3.38723 14.6217 3.50444 14.5044C3.62165 14.3872 3.6875 14.2283 3.6875 14.0625V5C3.6875 4.5856 3.85212 4.18817 4.14515 3.89515C4.43817 3.60212 4.8356 3.4375 5.25 3.4375H17.125C17.5394 3.4375 17.9368 3.60212 18.2299 3.89515C18.5229 4.18817 18.6875 4.5856 18.6875 5ZM16.8125 5.3125H5.5625V14.0625C5.56291 14.2733 5.53666 14.4833 5.48438 14.6875H16.5C16.5829 14.6875 16.6624 14.6546 16.721 14.596C16.7796 14.5374 16.8125 14.4579 16.8125 14.375V5.3125Z"
+                      fill="#1F4836"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3292_84638">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.25)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="icon fs-xsm2 font-secondary">
+                <svg
+                  class="default-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M7.9375 8.4375C7.9375 8.18886 8.03627 7.9504 8.21209 7.77459C8.3879 7.59877 8.62636 7.5 8.875 7.5H14.5C14.7486 7.5 14.9871 7.59877 15.1629 7.77459C15.3387 7.9504 15.4375 8.18886 15.4375 8.4375C15.4375 8.68614 15.3387 8.9246 15.1629 9.10041C14.9871 9.27623 14.7486 9.375 14.5 9.375H8.875C8.62636 9.375 8.3879 9.27623 8.21209 9.10041C8.03627 8.9246 7.9375 8.68614 7.9375 8.4375ZM8.875 12.5H14.5C14.7486 12.5 14.9871 12.4012 15.1629 12.2254C15.3387 12.0496 15.4375 11.8111 15.4375 11.5625C15.4375 11.3139 15.3387 11.0754 15.1629 10.8996C14.9871 10.7238 14.7486 10.625 14.5 10.625H8.875C8.62636 10.625 8.3879 10.7238 8.21209 10.8996C8.03627 11.0754 7.9375 11.3139 7.9375 11.5625C7.9375 11.8111 8.03627 12.0496 8.21209 12.2254C8.3879 12.4012 8.62636 12.5 8.875 12.5ZM19.1875 5V14.375C19.1875 14.6623 19.1309 14.9467 19.021 15.2121C18.9111 15.4775 18.7499 15.7187 18.5468 15.9218C18.3437 16.1249 18.1025 16.2861 17.8371 16.396C17.5717 16.5059 17.2873 16.5625 17 16.5625H3.5625C2.89946 16.5625 2.26357 16.2991 1.79473 15.8303C1.32589 15.3614 1.0625 14.7255 1.0625 14.0625V6.875C1.0625 6.62636 1.16127 6.3879 1.33709 6.21209C1.5129 6.03627 1.75136 5.9375 2 5.9375C2.24864 5.9375 2.4871 6.03627 2.66291 6.21209C2.83873 6.3879 2.9375 6.62636 2.9375 6.875V14.0625C2.9375 14.2283 3.00335 14.3872 3.12056 14.5044C3.23777 14.6217 3.39674 14.6875 3.5625 14.6875C3.72826 14.6875 3.88723 14.6217 4.00444 14.5044C4.12165 14.3872 4.1875 14.2283 4.1875 14.0625V5C4.1875 4.5856 4.35212 4.18817 4.64515 3.89515C4.93817 3.60212 5.3356 3.4375 5.75 3.4375H17.625C18.0394 3.4375 18.4368 3.60212 18.7299 3.89515C19.0229 4.18817 19.1875 4.5856 19.1875 5ZM17.3125 5.3125H6.0625V14.0625C6.06291 14.2733 6.03666 14.4833 5.98438 14.6875H17C17.0829 14.6875 17.1624 14.6546 17.221 14.596C17.2796 14.5374 17.3125 14.4579 17.3125 14.375V5.3125Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
+                Jelajah
+              </div>
+            </a>
+          </div>
+          <div class="tab-bar__item">
+            <a href="./profile.html">
+              <div class="icon-active fs-xsm2 font-secondary">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.75 6V7C14.75 8.65685 13.4069 10 11.75 10C10.0931 10 8.75 8.65685 8.75 7V6C8.75 4.34315 10.0931 3 11.75 3C13.4069 3 14.75 4.34315 14.75 6Z"
+                    fill="#A5C8B6"
+                  />
+                  <path
+                    d="M14.4677 13.8598L16.5044 15.4265C16.9572 15.7748 17.1604 16.3584 17.0219 16.9126C16.8621 17.5517 16.2879 18 15.6291 18H13.0596C11.784 18 10.75 16.966 10.75 15.6904C10.75 13.7742 12.9489 12.6915 14.4677 13.8598Z"
+                    fill="#A5C8B6"
+                  />
+                  <path
+                    d="M18.3111 16.4066C17.24 14.5267 15.5674 13.0619 13.5627 12.248C14.5596 11.5003 15.296 10.4579 15.6676 9.26842C16.0392 8.07892 16.0271 6.80267 15.633 5.62044C15.2389 4.43822 14.4829 3.40995 13.4719 2.6813C12.461 1.95264 11.2464 1.56055 10.0002 1.56055C8.75401 1.56055 7.53942 1.95264 6.52847 2.6813C5.51752 3.40995 4.76146 4.43822 4.36738 5.62044C3.9733 6.80267 3.96119 8.07892 4.33276 9.26842C4.70433 10.4579 5.44075 11.5003 6.43769 12.248C4.43294 13.0619 2.76038 14.5267 1.68925 16.4066C1.62288 16.5134 1.57864 16.6323 1.55917 16.7565C1.5397 16.8807 1.54539 17.0075 1.57591 17.1294C1.60642 17.2513 1.66114 17.3658 1.7368 17.4662C1.81247 17.5665 1.90753 17.6506 2.01635 17.7135C2.12517 17.7764 2.24552 17.8167 2.37025 17.8322C2.49497 17.8476 2.62153 17.8378 2.74239 17.8033C2.86325 17.7689 2.97595 17.7105 3.07379 17.6316C3.17162 17.5527 3.2526 17.4549 3.31191 17.3441C4.72753 14.8973 7.22753 13.4379 10.0002 13.4379C12.7728 13.4379 15.2728 14.898 16.6885 17.3441C16.817 17.5508 17.0209 17.6994 17.2569 17.7585C17.493 17.8176 17.7428 17.7825 17.9536 17.6608C18.1643 17.539 18.3194 17.3401 18.3861 17.1061C18.4529 16.872 18.426 16.6212 18.3111 16.4066ZM5.93769 7.50039C5.93769 6.6969 6.17595 5.91146 6.62234 5.24339C7.06874 4.57531 7.70321 4.05461 8.44554 3.74713C9.18786 3.43965 10.0047 3.3592 10.7927 3.51595C11.5808 3.6727 12.3047 4.05962 12.8728 4.62777C13.441 5.19592 13.8279 5.91979 13.9846 6.70784C14.1414 7.49588 14.0609 8.31272 13.7534 9.05504C13.446 9.79737 12.9253 10.4318 12.2572 10.8782C11.5891 11.3246 10.8037 11.5629 10.0002 11.5629C8.92313 11.5616 7.89053 11.1332 7.12894 10.3716C6.36734 9.61004 5.93893 8.57745 5.93769 7.50039Z"
+                    fill="#1F4836"
+                  />
+                </svg>
+              </div>
+              <div class="icon fs-xsm2 font-secondary">
+                <svg
+                  class="default-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5611 16.4066C17.49 14.5267 15.8174 13.0619 13.8127 12.248C14.8096 11.5003 15.546 10.4579 15.9176 9.26842C16.2892 8.07892 16.2771 6.80267 15.883 5.62044C15.4889 4.43822 14.7329 3.40995 13.7219 2.6813C12.711 1.95264 11.4964 1.56055 10.2502 1.56055C9.00401 1.56055 7.78942 1.95264 6.77847 2.6813C5.76752 3.40995 5.01146 4.43822 4.61738 5.62044C4.2233 6.80267 4.21119 8.07892 4.58276 9.26842C4.95433 10.4579 5.69075 11.5003 6.68769 12.248C4.68294 13.0619 3.01038 14.5267 1.93925 16.4066C1.87288 16.5134 1.82864 16.6323 1.80917 16.7565C1.7897 16.8807 1.79539 17.0075 1.82591 17.1294C1.85642 17.2513 1.91114 17.3658 1.9868 17.4662C2.06247 17.5665 2.15753 17.6506 2.26635 17.7135C2.37517 17.7764 2.49552 17.8167 2.62025 17.8322C2.74497 17.8476 2.87153 17.8378 2.99239 17.8033C3.11325 17.7689 3.22595 17.7105 3.32379 17.6316C3.42162 17.5527 3.5026 17.4549 3.56191 17.3441C4.97753 14.8973 7.47753 13.4379 10.2502 13.4379C13.0228 13.4379 15.5228 14.898 16.9385 17.3441C17.067 17.5508 17.2709 17.6994 17.5069 17.7585C17.743 17.8176 17.9928 17.7825 18.2036 17.6608C18.4143 17.539 18.5694 17.3401 18.6361 17.1061C18.7029 16.872 18.676 16.6212 18.5611 16.4066ZM6.18769 7.50039C6.18769 6.6969 6.42595 5.91146 6.87234 5.24339C7.31874 4.57531 7.95321 4.05461 8.69554 3.74713C9.43786 3.43965 10.2547 3.3592 11.0427 3.51595C11.8308 3.6727 12.5547 4.05962 13.1228 4.62777C13.691 5.19592 14.0779 5.91979 14.2346 6.70784C14.3914 7.49588 14.3109 8.31272 14.0034 9.05504C13.696 9.79737 13.1753 10.4318 12.5072 10.8782C11.8391 11.3246 11.0537 11.5629 10.2502 11.5629C9.17313 11.5617 8.14053 11.1332 7.37894 10.3716C6.61734 9.61004 6.18893 8.57745 6.18769 7.50039Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
+                User
+              </div>
+            </a>
+          </div>
+        </nav>
+
+        <div class="toolbar__bg">
+          <svg
+            width="128"
+            height="80"
+            viewBox="0 0 128 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0C34 0 32 34 64 34C96 34 94.0002 0 128 0V128H0V0Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/jelahjah.js"></script>
+  </body>
+</html>

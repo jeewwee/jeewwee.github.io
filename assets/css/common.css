@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "PS-Haute";
+  src: url("./../fonts/PS-Haute.ttf") format("Opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("./../fonts/Gilroy-SemiBold.ttf") format("Opentype");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./../fonts/Gilroy-Bold.ttf") format("Opentype");
+}
+@font-face {
+  font-family: "OCR-A";
+  src: url("./../fonts/OCR\ A\ Regular.otf") format("Opentype");
+}
+:root {
+  --c_primary: #1f754a;
+  --c_primary_two: #1f4836;
+  --c_secondary: #202121;
+  --c_gray: #656565;
+  --bg_gray: #f6f6f6;
+  --c_white: #ffffff;
+  --c_orange: #de7644;
+  --bg_white: #f5f9f7;
+  --c_primaryDark: #ffc000;
+  --c_danger: #f05947;
+  --c_black: #000000;
+  --c_dark: #1d1617;
+  --c_darkGray: #5c5e61;
+  --c_success: #00a54c;
+  --c_gray: #ada4a5;
+  --bg_primary: #ffcf01;
+  --bg_primaryDark: #ffc000;
+  --bg_secondary: #242424;
+  --bg_danger: #ff4949;
+  --bg_dark: #1d1617;
+  --bg_darkGray: #5c5e61;
+  --bg_gray_2: #f7f7f7;
+  --bg_gray_3: #a7a7a7;
+  --bg_light: #fafafa;
+  --bg_light_2: #f1f1f1;
+  --bg_light_3: #f3f3f3;
+  --loading-grey: #ededed;
+  --ff_haute: "PS-Haute", sans-serif;
+  --ff_roboto: "Roboto", sans-serif;
+  --ff_Gilroy_SemiBold: "Gilroy-SemiBold", sans-serif;
+  --ff_Gilroy_Bold: "Gilroy-Bold", sans-serif;
+  --fs_xsm2: 12px;
+  --fs_xsm: 14px;
+  --fs_sm: 16px;
+  --fs_def: 18px;
+  --fs_md: 20px;
+  --fs_lg: 24px;
+  --fs_xlg: 28px;
+  --fs_xl: 34px;
+  --fs_xxl: 36px;
+  --fs_xxl2: 38px;
+  --fs_xxl3: 42px;
+  --toolbar-height: 62px;
+  --addbutton-size: 60px;
+  --addbutton-color: 156, 86%, 33%;
+  --curve-width: 128px;
+}
+
+body {
+  font-family: "PS-Haute", Roboto;
+  overflow-x: hidden;
+}
+html {
+  background-color: #f2f2f2f2;
+}
+
+/* CLASSES FOR FONT FAMILY */
+.font-primary {
+  font-family: var(--ff_haute);
+}
+.font-secondary {
+  font-family: var(--ff_roboto);
+}
+
+/* CLASSES FOR COLORS SIZES */
+.c-primary {
+  color: var(--c_primary);
+}
+.c-secondary {
+  color: var(--c_secondary);
+}
+.c-danger {
+  color: var(--c_danger);
+}
+.c-gray {
+  color: #656565;
+}
+.c-orange {
+  color: #de7644;
+}
+
+/* CLASSES FOR FONT SIZES */
+.fs-xsm2 {
+  font-size: var(--fs_xsm2);
+}
+.fs-xsm {
+  font-size: var(--fs_xsm);
+}
+.fs-sm {
+  font-size: var(--fs_sm);
+}
+.fs-def {
+  font-size: var(--fs_def);
+}
+.fs-md {
+  font-size: var(--fs_md);
+}
+.fs-lg {
+  font-size: var(--fs_lg);
+}
+.fs-xlg {
+  font-size: var(--fs_xlg);
+}
+.fs-xl {
+  font-size: var(--fs_xl);
+}
+.fs-xxl {
+  font-size: var(--fs_xxl);
+}
+.fs-xxl2 {
+  font-size: var(--fs_xxl2);
+}
+.fs-xxl3 {
+  font-size: var(--fs_xxl3);
+}
+.error-pill {
+  position: absolute;
+  top: 86px;
+  background-color: #313131;
+  border-radius: 4px;
+  color: #ffffff !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px !important;
+  display: none;
+  z-index: 999 ;
+  text-align: center;
+  min-width: fit-content;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-alert{
+  user-select: none;
+}
+.input-error{
+  user-select: none;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.location-svg{
+  min-width: 14px !important;
+}
